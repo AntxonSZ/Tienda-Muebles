@@ -8,11 +8,22 @@ html {
 
 body{
     font-family: "Raleway", sans-serif;
-    font-size: 1.6rem; /*Es igual a 16 px que es el default*/
+    font-size: 1.6rem; /*Es igual a 16px que es el default en html*/
+    line-height: 2; /* es un interlineado*/
 }
 /*Globales*/
 h1, h2, h3{
     font-family: "Playfair Display", serif;
+    margin: 0 0 5rem 0;
+}
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 3rem;
+}
+h3 {
+    font-size: 3 rem;
 }
 a{
     text-decoration: none;
@@ -31,9 +42,7 @@ img{
 /* Header y Navegacion*/
 .nombre-sitio {
     margin-top: 5rem;
-    margin-bottom: 5rem;
     text-align: center;
-    font-size: 4rem;
 }
 .nombre-sitio span{
     color: #037bc0;
@@ -49,12 +58,16 @@ img{
 }
 .hero{
     background-image: url('../img/principal.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: no-repeat; /* hace que no se repita la imagen*/
+    background-size: cover; /*hace que cubra todo el espacio disponible*/
+    background-position: center center; /* que parte de la imagen mostrar*/
     height: 55rem;
 }
 
 /**Categorias**/
+.categorias{
+    padding-top: 5rem;
+}
 .categorias h2{
     text-align: center;
 }
