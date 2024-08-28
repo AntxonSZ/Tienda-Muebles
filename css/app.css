@@ -226,6 +226,19 @@ CON GRID
 .copyright{
     margin-top: 5rem;
     text-align: center;
+}
 
+/* NOSOTROS */
+
+.contenido-nosotros{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); /* esta linea lo hace responsive, para que no se altere el contenido al achicar la pantalla*/
+    column-gap: 4rem;
+}
+.informacion-nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
