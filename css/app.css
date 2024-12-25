@@ -48,9 +48,11 @@ img{
     padding: 1rem;
     transition: background-color .3s ease-out; /* UN EFECTO DE ANIMACION */
     text-align: center;
+    border: none;
 }
 .btn:hover{
     background-color: #769c02;
+    cursor: pointer;
 }
 
 /* UTILIDADES*/
@@ -288,4 +290,41 @@ CON GRID
     height: 25rem;
     width: 35rem;
     object-fit: cover;
+}
+/* FORMULARIO */
+
+.formulario{
+    max-width: 60rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.formulario fieldset{
+    border: 1px solid black;
+    margin-bottom: 2rem;
+}
+.formulario legend{
+    background-color: #005485;
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    margin-bottom: 4rem;
+}
+.campo{
+    display: flex; /* Se necesita este dis para que funcione el flex basis*/
+    margin-bottom: 2rem;
+}
+.campo label{
+    flex-basis: 10rem; /* para que los cuadros queden alineados en el form*/;
+}
+.campo input:not([type="radio"]),
+.campo textarea,
+.campo select{
+    flex: 1;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+
 }
